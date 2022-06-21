@@ -12,7 +12,7 @@ public class ABC {
                        while (letter != 'A') {
                            mon.wait();
                        }
-                       System.out.println("A");
+                       System.out.print("A");
                        letter = 'B';
                        mon.notifyAll();
                    }
@@ -28,7 +28,7 @@ public class ABC {
                         while (letter != 'B') {
                             mon.wait();
                         }
-                        System.out.println("B");
+                        System.out.print("B");
                         letter = 'C';
                         mon.notifyAll();
                     }
@@ -44,7 +44,7 @@ public class ABC {
                         while (letter != 'C') {
                             mon.wait();
                         }
-                        System.out.println("C");
+                        System.out.print("C");
                         letter = 'A';
                         mon.notifyAll();
                     }
